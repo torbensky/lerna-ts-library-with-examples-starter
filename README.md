@@ -1,13 +1,14 @@
 # lerna-ts-library-with-examples-starter
 A starter project for developing a Typescript library in a monorepo managed by lerna so that embedded example projects can be included
 
-It is intended to be pretty minimal. I often find myself wanting to kick off a project like this and need this scaffolding to get
-running.
+It is intended to be pretty minimal. I often find myself wanting to kick off a project like this and need this scaffolding to get running.
 
 I think it's nice when building a library to show *standalone* examples. Too many libraries include their source code in the
 same package and it can be very confusing to see clearly how you would use it from another package. This could also be 
 solved using separate repositories, but I prefer a monorepo because these examples should be intimately linked to the library
 project. Using lerna + monorepo will help me ensure that example packages will stay in sync with the library they describe.
+
+*TLDR;* Build examples based on how your users *actually* use your library
 
 ## Overview
 
