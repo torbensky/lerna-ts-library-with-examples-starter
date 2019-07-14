@@ -1,0 +1,32 @@
+{
+  "name": "lib",
+  "version": "1.0.0",
+  "description": "An example TS library that you want built in a monorepo to also host separate example projects",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --incremental"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torbensky/lerna-ts-library-with-examples-starter.git"
+  },
+  "keywords": [
+    "lerna",
+    "typescript",
+    "ts",
+    "starter",
+    "example",
+    "monorepo"
+  ],
+  "author": "Torben Werner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/torbensky/lerna-ts-library-with-examples-starter/issues"
+  },
+  "homepage": "https://github.com/torbensky/lerna-ts-library-with-examples-starter#readme",
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  }
+}
