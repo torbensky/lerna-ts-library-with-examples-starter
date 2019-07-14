@@ -22,8 +22,8 @@ your packages in the right order.
 
 ### If you just have NPM
 
-`npm install` <-- (optional) installs root package dependencies. Useful to install `lerna` CLI tool at root
-`npm run bootstrap` <-- will run `lerna bootstrap` to install deps
+- `npm install` <-- (optional) installs root package dependencies. Useful to install `lerna` CLI tool at root
+- `npm run bootstrap` <-- will run `lerna bootstrap` to install deps
 
 ### If you have "lerna" installed
 
@@ -35,9 +35,9 @@ The root directory of this project contains a `package.json` which includes npm 
 You can use these or you can use the relevant `lerna` commands directly. Up to you.
 
 Here is how you can build all the packages:
-`npm run build`
-*or*
-`lerna run build`
+- `npm run build`
+- *or*
+- `lerna run build`
 
 This recursively runs a `npm run build` command in any subpackage that defines `build` as an npm script. It will skip packages
 that don't have it. It will run the command in order of the dependency graphs, so core packages will get built before any
@@ -49,6 +49,6 @@ To run the examples, just execute `npm run start` or `lerna run start`. It will 
 package that defines it. If run using the npm script, it will ensure everything is built first.
 
 Here is how you can run the examples:
-`npm run start` <-- ensures everything is built because of a `prestart`
-*or*
-`lerna run --parallel start` (note: you will get errors if you haven't built yet)
+- `npm run start` <-- ensures everything is built because of a `prestart`
+- *or*
+- `lerna run --parallel start` (note: you will get errors if you haven't built yet)
