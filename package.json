@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "start": "lerna run --parallel start",
+    "prestart": "npm run build",
     "build": "lerna run build"
   },
   "devDependencies": {
