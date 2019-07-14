@@ -18,6 +18,17 @@ This project is setup using lerna. Lerna adds monorepo commands to make managing
 Lerna is aware of all the monorepo packages and the relationship between packages. With this it can do smart things like build
 your packages in the right order.
 
+## Getting started
+
+### If you just have NPM
+
+`npm install` <-- (optional) installs root package dependencies. Useful to install `lerna` CLI tool at root
+`npm run bootstrap` <-- will run `lerna bootstrap` to install deps
+
+### If you have "lerna" installed
+
+`lerna bootstrap` <-- install dependencies for all the monorepo packages
+
 ## Building
 
 The root directory of this project contains a `package.json` which includes npm scripts to make it easy to run the monorepo.
